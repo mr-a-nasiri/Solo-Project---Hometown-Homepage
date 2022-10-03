@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background: #8e583a;
+  color: #edc261;
+  margin-top: 0.75rem;
+}
+
+.btn:hover {
+  background: #563f38;
+  color: #f6e383;
+}
+
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background: #edc261;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", cursive;
+  margin: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+#header {
+  background: url("/images/khaju_bridge.jpg") no-repeat center 30% / cover;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-main-title {
+  background: #edc261;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 10px 5px #000;
+  color: #563f38;
+  margin-bottom: 1rem;
+}
+
+.header-sub-title {
+  background: #f6e383;
+  padding: 0.3rem 2rem;
+  box-shadow: 0 0 10px 5px #000;
+  color: #8e583a;
+}
+
+/* Section: A*/
+#section-a {
+  background: #faf1c1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#section-a .section-a-title {
+  margin-bottom: 1.5rem;
+  color: #52474f;
+}
+
+#section-a .section-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  color: #8e583a;
+}
+
+#section-a .section-items .item-1,
+#section-a .section-items .item-2,
+#section-a .section-items .item-3 {
+  margin: 0 5rem;
+}
+
+#section-a img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px 50px #563f38;
+  border: 2px solid #563f38;
+}
+
+/* Footer */
+#footer {
+  padding: 3rem;
+  background: #edc261;
+  color: #563f38;
+}

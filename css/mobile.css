@@ -1,0 +1,25 @@
+/* Section: A*/
+
+#section-a .section-items {
+  display: block;
+  color: #8e583a;
+}
+
+#section-a .section-items .item-1,
+#section-a .section-items .item-2,
+#section-a .section-items .item-3 {
+  margin: 0;
+  padding: 0.75rem 12rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+  #section-a .section-items .item-1,
+  #section-a .section-items .item-2,
+  #section-a .section-items .item-3 {
+    margin: 0;
+    padding: 0.75rem 1.5rem;
+    display: block;
+  }
+}
